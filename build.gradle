@@ -54,8 +54,12 @@ task codeBuild {
         println "Task: Building connectors..."
         for (String path : updatedBallerinaPackages) {
             Utils.executePrechecks(path);
-            exec {
-                commandLine 'sh', '-c', "${ballerinaDistributionPath}/bin/bal pack ${path}"
+            try {
+                exec {
+                    commandLine 'sh', '-c', "${ballerinaDistributionPath}/bin/bal pack ${path}"
+                }
+            } catch (Exception ex) {
+                println "Failed to build connector [" + path + "] Error : " + ex.toString(); 
             }
         }
 
