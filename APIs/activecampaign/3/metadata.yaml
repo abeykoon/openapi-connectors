@@ -1,0 +1,11 @@
+id: activecampaign
+displayName: ActiveCampaign
+type: OpenAPI
+version: "3"
+description: This is the [ActiveCampaign API version 3](https://developers.activecampaign.com/reference/overview) OpenAPI specification.
+idlPath: /activecampaign/3/openapi.yaml
+thumbnailPath: /activecampaign/3/icon.png
+documentationPath: /activecampaign/3/readme.md
+keywords:
+  - Marketing/MarketingAutomation
+  - Cost/Freemium
