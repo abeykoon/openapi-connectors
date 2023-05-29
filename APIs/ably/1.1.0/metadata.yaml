@@ -11,4 +11,4 @@ keywords:
   - Cost/Freemium
   - abc/def
 endpoint:
-  - url: https://rest.ably.new.io
+  - url: https://rest.ably.latest.io
